@@ -15,7 +15,7 @@ const Navbar = () => {
           <h1>
             <Link href={"/"}>LinkOn</Link>
           </h1>
-          <label className="flex">
+          <label className="flex cursor-pointer">
             <input
               type="checkbox"
               onChange={() => setIsDark(!isDark)}
