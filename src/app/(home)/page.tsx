@@ -78,7 +78,6 @@ export default function Home() {
 
   const handleDownload = async () => {
     try {
-      // Memicu unduhan menggunakan elemen anchor palsu
       const link = document.createElement("a");
       link.href = downloadUrl;
       link.download = "qrcode.png";
