@@ -147,8 +147,8 @@ export default function Home() {
       </div>
 
       <p className="h1 text-center text-lg md:text-xl font-semibold px-2 md:px-10 lg:px-52 text-indigo-950">
-        LinkOn adalah layanan penyingkat url atau shortlink gratis dan
-        menggenerate QR code tanpa daftar dan pungutan biaya
+        LinkOn adalah layanan penyingkat url atau shortlink gratis dan generate
+        QR code tanpa daftar dan pungutan biaya
       </p>
       <div className="flex flex-col justify-center items-center">
         {qrCodeDataUrl && (
