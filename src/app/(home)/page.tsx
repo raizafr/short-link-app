@@ -107,7 +107,7 @@ export default function Home() {
           onClick={addUrl}
           className={`${
             isLoading ? "cursor-not-allowed" : "cursor-pointer"
-          } bg-sky-200 dark:bg-indigo-950 px-5 py-3 rounded-xl font-semibold w-full md:w-36 flex justify-center`}
+          } bg-sky-200 dark:bg-indigo-950 px-5 py-3 rounded-xl font-semibold w-full md:w-36 flex justify-center `}
           disabled={isLoading}
         >
           {isLoading ? (

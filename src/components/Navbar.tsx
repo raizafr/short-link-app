@@ -4,6 +4,8 @@ import { ThemeContextType, useDark } from "@/context/ThemeContext";
 import Link from "next/link";
 import React from "react";
 import { LuMoon, LuSun } from "react-icons/lu";
+import { IoMdMail, IoLogoGithub, IoLogoInstagram } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Navbar = () => {
   const { setIsDark, isDark } = useDark() as ThemeContextType;
@@ -15,14 +17,26 @@ const Navbar = () => {
           <h1>
             <Link href={"/"}>LinkOn</Link>
           </h1>
-          <label className="flex cursor-pointer">
-            <input
-              type="checkbox"
-              onChange={() => setIsDark(!isDark)}
-              className="hidden"
-            />
-            {isDark ? <LuSun /> : <LuMoon />}
-          </label>
+          <div className="flex items-center gap-3">
+            <Link href={"https://www.instagram.com/_raizafr/"} target="_blank">
+              <AiFillInstagram />
+            </Link>
+            <Link href={"https://github.com/raizafr"} target="_blank">
+              <IoLogoGithub />
+            </Link>
+            <Link href={"mailto:mhdraizafarhan@gmail.com"} target="_blank">
+              <IoMdMail />
+            </Link>
+            <div className="border-l-2 dark:border-sky-200 border-indigo-950 h-7 w-1" />
+            <label className="flex cursor-pointer">
+              <input
+                type="checkbox"
+                onChange={() => setIsDark(!isDark)}
+                className="hidden"
+              />
+              {isDark ? <LuSun /> : <LuMoon />}
+            </label>
+          </div>
         </nav>
       </div>
     </div>

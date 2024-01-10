@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { ThemeContextProvider } from '@/context/ThemeContext'
 import 'react-toastify/dist/ReactToastify.css';
-const inter = Inter({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'LinkOn | URL Shortener',
@@ -21,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeContextProvider>
-        <body className={inter.className}>
+        <body>
           <Navbar/>
           {children}
           <Footer/>
