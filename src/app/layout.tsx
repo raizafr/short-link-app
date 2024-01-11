@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title:'LinkOn | URL Shortener',
     description:'LinkOn adalah layanan penyingkat url atau shortlink gratis dan generate QR code tanpa daftar dan pungutan biaya',
     type:'website',
-    locale:'',
+    locale:'id_ID',
     url:'https://linkon.cfd/',
     siteName:'linkon'
   }
